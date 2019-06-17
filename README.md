@@ -1,38 +1,28 @@
-## Welcome to GitHub Pages
-### This is my personal blog
-#### This is my first personal blog
-You can use the [editor on GitHub](https://github.com/FreeSpeter/FreeSpeter.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+# Minimal Text
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Minimal Text is a clean and lightweight Jekyll Theme
 
-### Markdown
+## Documentation
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+__Baseurl__
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-#### Header 4
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```yaml
+---
+title: Minimal Text
+baseurl: "/Minimal-Text"
 ```
+The site baseurl is prepended to asset links and the home button in the `post.html` layout. Please note it must start with a "/"
+By changing this you are changing the location of your website. gh.clarkhacks.com`/Minimal-Text` is the location of Minimal-Text in my case.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+__Pagination__
 
-### Jekyll Themes
+```yaml
+paginate: 5
+paginate_path: "/:num/"
+```
+`paginate` in `_config.yml` is the number of post blocks that will appear on a single page.
+`paginate_path` is at what location your blog pages will be displayed.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/FreeSpeter/FreeSpeter.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+__The documentation has been implemented because of user questions.__ For more documentation to be please request what you need defined.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![screenshot](screenshot.jpg)
